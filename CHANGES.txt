@@ -1,3 +1,7 @@
+v0.6.0:
+ * Specific React version 16.13.1
+ * Renamed UNSAFE lifecycle methods
+
 v0.5.0:
  * Support for React 15 & 16
  * Fix XSS vulnerabilities in text tool (interactive & SVG output)
