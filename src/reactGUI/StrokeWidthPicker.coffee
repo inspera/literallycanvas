@@ -11,7 +11,7 @@ module.exports = createReactClass
   getInitialState: -> @getState()
   mixins: [createSetStateOnEventMixin('toolDidUpdateOptions')]
 
-  componentWillReceiveProps: (props) -> @setState @getState(props.tool)
+  UNSAFE_componentWillReceiveProps: (props) -> @setState @getState(props.tool)
 
   render: ->
     {ul, li, svg, circle, div} = DOM

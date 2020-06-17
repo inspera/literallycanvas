@@ -11,7 +11,7 @@ createToolButton = (tool) ->
   React.createFactory createReactClass
     displayName: displayName,
     getDefaultProps: -> {isSelected: false, lc: null}
-    componentWillMount: ->
+    UNSAFE_componentWillMount: ->
       if @props.isSelected
         # prevent race condition with options, tools getting set
         # (I've already forgotten the specifics of this; should reinvestigate
