@@ -33,3 +33,10 @@ in progress.
 
 To generate a production-ready `.js` file, run `gulp` and pull out either
 `lib/js/literallycanvas.js` or `lib/js/literallycanvas.min.js`.
+
+Building for Inspera Player:
+```
+nvm use
+yarn gulp
+yarn pack
+```
